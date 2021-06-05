@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import react,{useState,useEffect} from 'react';
 import './App.css';
-
+import Searchit from './Components/Searchit';
+import Geolocation from './Components/Geolocation';
+import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar expand="xl" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">Weather Application</Navbar.Brand>
+      
+      </Navbar>
+      <Searchit/>
+      <Geolocation/>
     </div>
   );
 }

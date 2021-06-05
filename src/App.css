@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+   background-image: linear-gradient(to bottom right, red, yellow);
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -23,7 +25,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.hello_bro{
+  min-height  : 70vh;
+}
 .App-link {
   color: #61dafb;
 }
